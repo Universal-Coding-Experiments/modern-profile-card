@@ -1,0 +1,90 @@
+.btn-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.focus-ring:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.18), 0 6px 18px rgba(2, 6, 23, 0.6);
+    border-radius: 0.75rem;
+}
+
+.avatar-ring {
+    position: relative;
+    display: inline-block;
+    border-radius: 9999px;
+    padding: 4px;
+}
+
+.avatar-ring::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, rgba(124, 58, 237, 0.18), rgba(6, 182, 212, 0.12));
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 220ms ease;
+    pointer-events: none;
+}
+
+.card:hover .avatar-ring::after,
+.card:focus-within .avatar-ring::after {
+    opacity: 1;
+}
+
+.bio {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 320ms ease, opacity 260ms ease;
+}
+
+.card:hover .bio,
+.card:focus-within .bio {
+    max-height: 160px;
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-gradient {
+        animation: none;
+    }
+
+    .card {
+        transition: none;
+    }
+
+    .avatar {
+        transition: none;
+    }
+
+    .bio {
+        transition: none;
+    }
+}
+
+:root {
+    --card-width: clamp(18rem, 22vw, 22rem);
+    --avatar-size: clamp(64px, 12vw, 88px);
+    --touch-size: 44px;
+}
+
+.btn-touch {
+    min-height: var(--touch-size);
+    min-width: var(--touch-size);
+}
