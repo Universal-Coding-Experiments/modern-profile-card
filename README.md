@@ -9,12 +9,11 @@ https://universal-coding-experiments.github.io/modern-profile-card/
 ---
 
 ## ✨ Features
-- 🎶 Audio Upload & Playback: Upload any audio file and play/pause directly in the browser.
-- 🔊 Volume Control: Real‑time volume adjustment with a slider.
-- 🎨 Reactive Blobs: Blobs pulse, rotate, and morph based on bass, mid, and treble frequencies.
-- ⚡ Beat Detection: Refined spectral flux detection for stronger beat reactions.
-- 📱 Responsive UI: Tailwind CSS ensures smooth layout across mobile, tablet, laptop, and desktop.
-- 🛠 User Controls: Sliders for sensitivity and smoothing to fine‑tune the visualizer’s behavior.
+- 🌗 Dark/Light Theme Toggle - adaptive UI for global audiences.
+- 🎨 Glassmorphism Design - modern, elegant aesthetic.
+- 📱 Responsive Layout - works seamlessly across mobile, tablet, and desktop.
+- 🖱 Interactive Elements - follow button with state changes, social links.
+- ♿ Accessibility Considerations - focus rings, keyboard navigation, reduced motion support.
 
 ## 🚀 Getting Started
 1. Clone the repo
@@ -29,11 +28,13 @@ git clone https://github.com/Universal-Coding-Experiments/modern-profile-card.gi
 
 
 ## 🛠 Tech Stack
-- 🌗 Dark/Light Theme Toggle - adaptive UI for global audiences.
-- 🎨 Glassmorphism Design - modern, elegant aesthetic.
-- 📱 Responsive Layout - works seamlessly across mobile, tablet, and desktop.
-- 🖱 Interactive Elements - follow button with state changes, social links.
-- ♿ Accessibility Considerations - focus rings, keyboard navigation, reduced motion support.
+- HTML5 — Semantic structure for the profile card and content.
+- Tailwind CSS — Utility‑first CSS framework for responsive design, dark/light theme variants, and modern styling.
+- CSS3 (Custom Styles) — Glassmorphism effects, gradient animations, avatar rings, and transitions.
+- JavaScript (ES6) — Handles interactivity:
+  - Theme toggle logic (dark/light mode switching).
+  - Follow button state management (loading, following).
+  - Accessibility features (keyboard navigation, reduced motion).
 
 ---
 
